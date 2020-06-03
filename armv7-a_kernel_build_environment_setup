@@ -1,0 +1,23 @@
+export X_TOOLCHAIN_NAME=gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf
+export PATH=/opt/${X_TOOLCHAIN_NAME}/arm-linux-gnueabihf/bin:/opt/${X_TOOLCHAIN_NAME}/bin:$PATH
+export CC="arm-linux-gnueabihf-gcc  -march=armv7-a"
+export CXX="arm-linux-gnueabihf-g++  -march=armv7-a"
+export CPP="arm-linux-gnueabihf-gcc -E  -march=armv7-a"
+export AS="arm-linux-gnueabihf-as "
+export LD="arm-linux-gnueabihf-ld "
+export GDB=arm-linux-gnueabihf-gdb
+export STRIP=arm-linux-gnueabihf-strip
+export RANLIB=arm-linux-gnueabihf-ranlib
+export OBJCOPY=arm-linux-gnueabihf-objcopy
+export OBJDUMP=arm-linux-gnueabihf-objdump
+export AR=arm-linux-gnueabihf-ar
+export NM=arm-linux-gnueabihf-nm
+export M4=m4
+export TARGET_PREFIX=arm-linux-gnueabihf-
+export CONFIGURE_FLAGS="--target=arm-linux-gnueabihf --host=arm-linux-gnueabihf --build=x86_64-linux"
+export CFLAGS="-O2 -pipe -g -feliminate-unused-debug-types"
+export CXXFLAGS="-O2 -pipe -g -feliminate-unused-debug-types"
+export LDFLAGS="-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed"
+export CPPFLAGS=""
+export ARCH=arm
+export CROSS_COMPILE=arm-linux-gnueabihf-
